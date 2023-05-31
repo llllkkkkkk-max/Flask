@@ -42,7 +42,7 @@ def post():
             'time': time
         })
         # 重定向到论坛页面
-        return redirect(url_for('forum'))
+        return render_template('post.html')
     else:
         return render_template('post.html')
 
